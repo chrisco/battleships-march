@@ -8,8 +8,6 @@ require 'byebug'
 
 class BattleshipsWeb < Sinatra::Base
   set :views, proc {File.join(root, '..', 'views')}
-  set :static, true # From https://stackoverflow.com/questions/6762642/sinatra-css-images-issue?rq=1
-  set :public_dir, 'assets' # From https://stackoverflow.com/questions/6762642/sinatra-css-images-issue?rq=1
   enable :sessions
 
   get '/' do
